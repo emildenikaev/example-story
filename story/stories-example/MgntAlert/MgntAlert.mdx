@@ -1,0 +1,44 @@
+import {Meta, Canvas} from '@storybook/blocks'
+import * as AlertStories from './MgntAlert.stories'
+
+<Meta of={ AlertStories } />
+
+# Alert
+
+Компонент (алерт) для уведомлений в форме
+
+## Базовое использование
+
+По умолчанию используется успешный алерт среднего размера без автозакрытия, крестика и кнопок
+
+<Canvas of={ Alert.Basic } />
+
+title - Заголовок строкой 
+title="Заголовок"
+
+bodyText - Текст строкой
+bodyText="Текст"
+
+type - тип алерта 
+type="isInfo"
+
+isInfo - информирование
+isWarning - предупреждение
+isError - ошибка
+isSuccess - успешный
+isNeutral - нейтральный
+
+size - размер (средний или большой)
+size="medium"
+
+medium - средний
+large - большой
+
+timeClosing - время, через которое закроется алерт в миллисекундах
+timeClosing=5000
+
+isButton - есть кнопка или нет
+isButton=true /кнопка нужна
+
+isClose - есть значок закрытия или нет
+isClose=false /значок не нужен

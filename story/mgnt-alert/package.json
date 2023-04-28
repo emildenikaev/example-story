@@ -1,0 +1,22 @@
+{
+    "name": "@ui-kit/mgnt-alert",
+    "files": [
+      "dist"
+    ],
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./dist/mgnt-alert.mjs",
+        "require": "./dist/mgnt-alert.umd.js"
+      },
+      "./index.d.ts": "./dist/index.d.ts"
+    },
+    "version": "0.4.0",
+    "scripts": {
+      "build": "vite build"
+    },
+    "dependencies": {
+      "vue": "^3.2.41"
+    }
+}
+  
